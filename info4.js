@@ -62,7 +62,7 @@ const styles = StyleSheet.create({
         borderBottomWidth: 1.5,
         borderLeftWidth: 1.5,
         borderRadius: 10,
-        padding: 8,
+        padding: 7,
     },
     cardimg: {
         width: 300,
