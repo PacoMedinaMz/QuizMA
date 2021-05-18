@@ -1,9 +1,7 @@
 import React from 'react';
 import { View, StyleSheet, ScrollView, Text, Image, TouchableOpacity } from 'react-native'
 import { Divider } from 'react-native-elements';
-import { Avatar, Button, Card, Title, Paragraph } from 'react-native-paper';
-
-
+import { Card, Title } from 'react-native-paper';
 
 export default function preguntas({ navigation, navigation: { goBack } }) {
 
@@ -17,7 +15,7 @@ export default function preguntas({ navigation, navigation: { goBack } }) {
                 </Card.Content>
 
                 {/* Imagen de la pregunta */}
-                <Card.Cover style={styles.cardimg} source={require('./assets/intro.jpg')} />
+                <Card.Cover style={styles.cardimg} source={require('./assets/preg1.jpg')} />
 
             </Card>
 
@@ -48,8 +46,18 @@ export default function preguntas({ navigation, navigation: { goBack } }) {
                     style={styles.respuestabtn}>
                     <Text style={styles.botonOk}>Otro</Text>
                 </TouchableOpacity>
+
             </Card>
+
+                {/* Btn Salir */}
+                <TouchableOpacity
+                    onPress={() => goBack()}
+                    style={styles.btnregreso}>
+                    <Text style={styles.txtregreso}>Regresar</Text>
+                </TouchableOpacity>
         </View>
+
+
     );
 }
 
@@ -74,7 +82,7 @@ const styles = StyleSheet.create({
         margin: 10,
     },
     info: {
-        flex: .9,
+        flex: 1,
         justifyContent: "space-between",
         backgroundColor: "#F3F3F3",
         marginTop: 20,
@@ -90,13 +98,12 @@ const styles = StyleSheet.create({
         marginTop: 10,
     },
     cardimg: {
-        width: 370,
+        width: 330,
         height: 250,
         marginTop: 10,
         marginBottom: 10,
         borderRadius: 10,
-        justifyContent: 'center',
-        alignContent: 'center'
+        alignSelf: 'center'
     },
     cardtitle: {
         paddingBottom: 5,
@@ -146,4 +153,20 @@ const styles = StyleSheet.create({
         margin: 5,
         marginLeft: 10
     },
+    btnregreso: {
+        color: '#FF4646',
+        backgroundColor: '#F3F3F3',
+        padding: 3,
+        margin: 5,
+        width:110,
+    },
+    txtregreso: {
+        fontSize: 20,
+        textAlign: 'left',
+        color: '#FF4646',
+        backgroundColor: '#F3F3F3',
+        borderRadius: 15,
+        padding: 3,
+        margin: 5,
+    }
 });

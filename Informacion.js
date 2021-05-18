@@ -1,10 +1,14 @@
 import React from 'react';
-import { View, StyleSheet, ScrollView, Text, Image, Divider,TouchableOpacity } from 'react-native'
+import { View, StyleSheet, ScrollView, Text, Image, Divider, TouchableOpacity } from 'react-native'
 
 import { Avatar, Button, Card, Title, Paragraph } from 'react-native-paper';
+import info1 from './info1';
+import info2 from './info2';
+import info3 from './info3';
+import info4 from './info4';
 
 
-export default function Informacion({ navigation }) {
+export default function Informacion({navigation, navigation: { goBack } }) {
     return (
         <ScrollView style={styles.scrollView}>
             <View style={styles.info}>
@@ -15,7 +19,7 @@ export default function Informacion({ navigation }) {
                     <Card.Cover style={styles.cardimg} source={require('./assets/infobasics2.jpg')} />
                     <Card.Actions style={styles.cardbtn}>
                         <TouchableOpacity
-                            // onPress={() => { navigation.navigate() }} //Cambiar este para redirigir a sigiuente pregunta
+                            onPress={() => { navigation.navigate(info1) }}
                             style={styles.respuestabtn}>
                             <Text style={styles.botonOk}>Consultar</Text>
                         </TouchableOpacity>
@@ -24,12 +28,12 @@ export default function Informacion({ navigation }) {
 
                 <Card style={styles.card}>
                     <Card.Content>
-                        <Title style={styles.cardtitle}>Investigación 2</Title>
+                        <Title style={styles.cardtitle}>Información 1</Title>
                     </Card.Content>
-                    <Card.Cover style={styles.cardimg} source={require('./assets/anatommas.jpg')} />
+                    <Card.Cover style={styles.cardimg} source={require('./assets/inv2.jpg')} />
                     <Card.Actions style={styles.cardbtn}>
-                    <TouchableOpacity
-                            // onPress={() => { navigation.navigate() }} //Cambiar este para redirigir
+                        <TouchableOpacity
+                            onPress={() => { navigation.navigate(info2) }} //Cambiar este para redirigir
                             style={styles.respuestabtn}>
                             <Text style={styles.botonOk}>Consultar</Text>
                         </TouchableOpacity>
@@ -38,18 +42,40 @@ export default function Informacion({ navigation }) {
 
                 <Card style={styles.card}>
                     <Card.Content>
-                        <Title style={styles.cardtitle}>Investigación 2</Title>
+                        <Title style={styles.cardtitle}>Información 2</Title>
                     </Card.Content>
                     <Card.Cover style={styles.cardimg} source={require('./assets/anatomfem.jpg')} />
                     <Card.Actions style={styles.cardbtn}>
-                    <TouchableOpacity
-                            // onPress={() => { navigation.navigate() }} //Cambiar este para redirigir 
+                        <TouchableOpacity
+                            onPress={() => { navigation.navigate(info3) }} //Cambiar este para redirigir 
+                            style={styles.respuestabtn}>
+                            <Text style={styles.botonOk}>Consultar</Text>
+                        </TouchableOpacity>
+                    </Card.Actions>
+                </Card>
+
+                <Card style={styles.card}>
+                    <Card.Content>
+                        <Title style={styles.cardtitle}>Información 3</Title>
+                    </Card.Content>
+                    <Card.Cover style={styles.cardimg} source={require('./assets/inv3.jpg')} />
+                    <Card.Actions style={styles.cardbtn}>
+                        <TouchableOpacity
+                            onPress={() => { navigation.navigate(info4) }} //Cambiar este para redirigir 
                             style={styles.respuestabtn}>
                             <Text style={styles.botonOk}>Consultar</Text>
                         </TouchableOpacity>
                     </Card.Actions>
                 </Card>
             </View>
+
+            {/* Regresar btn */}
+            <TouchableOpacity
+                onPress={() => goBack()}
+                style={styles.boton}>
+                <Text style={styles.botonSalir}>Regresar</Text>
+            </TouchableOpacity>
+
         </ScrollView>
 
 
@@ -75,8 +101,9 @@ const styles = StyleSheet.create({
         marginTop: 10,
     },
     cardimg: {
-        width: 380,
-        height: 150,
+        width: 370,
+        height: 200,
+        alignSelf: 'center',
     },
     cardtitle: {
         paddingBottom: 5,
@@ -91,8 +118,9 @@ const styles = StyleSheet.create({
     boton: {
         width: 150,
         height: 100,
-        justifyContent: 'center',
-        alignContent: 'center',
+        marginTop:25,
+        margin: 10,
+        alignSelf: 'center'
     },
     botonSalir: {
         fontSize: 25,
@@ -102,6 +130,8 @@ const styles = StyleSheet.create({
         borderRadius: 15,
         padding: 3,
         margin: 5,
+        
+        
     },
     botonOk: {
         fontSize: 20,
@@ -113,6 +143,7 @@ const styles = StyleSheet.create({
         margin: 5,
         marginLeft: 10
     },
+   
 
 
 })

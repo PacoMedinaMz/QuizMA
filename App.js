@@ -13,6 +13,11 @@ import menu from './menu';
 import instruccion from './instruccion';
 import Informacion from './Informacion';
 import preguntas from './preguntas';
+import info1 from './info1';
+import info2 from './info2';
+import info3 from './info3';
+import info4 from './info4';
+
 const Stack = createStackNavigator();
 
 
@@ -64,6 +69,10 @@ const App = ({ navigation }) => {
             <Stack.Screen name="instruccion" component={instruccion}></Stack.Screen>
             <Stack.Screen name="Informacion" component={Informacion}></Stack.Screen>
             <Stack.Screen name="preguntas" component={preguntas}></Stack.Screen>
+            <Stack.Screen name="info1" component={info1}></Stack.Screen>
+            <Stack.Screen name="info2" component={info2}></Stack.Screen>
+            <Stack.Screen name="info3" component={info3}></Stack.Screen>
+            <Stack.Screen name="info4" component={info4}></Stack.Screen>
           </Stack.Navigator>
         </NavigationContainer>
 

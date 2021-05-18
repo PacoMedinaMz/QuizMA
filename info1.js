@@ -4,7 +4,7 @@ import { Divider } from 'react-native-elements';
 import { Avatar, Button, Card, Title, Paragraph } from 'react-native-paper';
 
 
-export default function instruccion({navigation: { goBack } }) {
+export default function info1({navigation: { goBack } }) {
 
     return (
         <ScrollView style={styles.scrollView}>
@@ -12,30 +12,13 @@ export default function instruccion({navigation: { goBack } }) {
                 <Card style={styles.card}>
                     <Card.Content>
                         {/* Título */}
-                        <Title style={styles.cardtitle}>¿Cómo funciona?</Title>
+                        <Title style={styles.cardtitle}>Info 1</Title>
                         <Divider style={{ backgroundColor: 'black' }} />
-                        <Text style={styles.texto}>{'\n'}Esta aplicación esta desarrollada para brindarte información acerca de la educación
-                        sexual y el uso adecuado de anticonceptivos y preservativos.{'\n'}</Text>
+                        <Text style={styles.texto}>{'\n'}En desarrollo :){'\n'}</Text>
 
-                        {/* ¿Qué se puede hacer? */}
-                        <Title style={{ fontWeight: "bold" }}>¿Qué se puede hacer?</Title>
-                        <Text style={styles.texto}>Dentro de la aplicación se puede consultar información de manera libre en el apartado de
-                            <Text style={{ fontWeight: "bold" }}> "Más Información"</Text>, en el cuál podras aprender muchas cosas nuevas.
-                        </Text>
-
-                        <Card.Cover style={styles.cardimg} source={require('./assets/anatommas.jpg')} />
+                        <Card.Cover style={styles.cardimg} source={require('./assets/mantenimiento.png')} />
 
 
-                        <Text style={styles.texto}>{'\n'}Existe un apartado llamado
-                            <Text style={{ fontWeight: "bold" }}> "Empezar"</Text>. Este consiste en un cuestionario personalizado en el cual
-                            en base a tus elecciones, te recomendaremos los mejores métodos y consejos específicos para ti.
-                        </Text>
-
-                        <Card.Cover style={styles.cardimg} source={require('./assets/inst2.jpg')} />
-
-                        <Title style={{ fontWeight: "bold" }}>{'\n'}Recuerda que...</Title>
-                        <Text style={styles.texto}>Toda tu información personal y elecciones dentro de los cuestionarios, así como tus consultas de información
-                        serán privadas y solo accesibles para ti.{'\n'}</Text>
 
                         {/* Regresar btn */}
                         <TouchableOpacity

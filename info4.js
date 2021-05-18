@@ -2,25 +2,24 @@ import React from 'react';
 import { View, StyleSheet, ScrollView, Text, Image, TouchableOpacity } from 'react-native'
 import { Divider } from 'react-native-elements';
 import { Avatar, Button, Card, Title, Paragraph } from 'react-native-paper';
-import preguntas from './preguntas';
 
-export default function Home({navigation, navigation: { goBack } }) {
+
+export default function info4({navigation: { goBack } }) {
 
     return (
+        <ScrollView style={styles.scrollView}>
         <View style={styles.info}>
-            
             <Card style={styles.card}>
                 <Card.Content>
-                    <Title style={styles.cardtitle}>¡Vamos a comenzar!</Title>
-                    <Divider style={{ backgroundColor: 'blue' }} />
-                    <Text style={styles.texto}>{'\n'}Tendrás que contestar las preguntas que se mostrarán a continuación.</Text>
-                    <Text style={styles.texto}>{'\n'}De esta manera, podremos recomendarte lo mas adecuado para ti.{'\n'}</Text>
-                   
-                </Card.Content>
-               
-                <Card.Cover style={styles.cardimg} source={require('./assets/intro.jpg')} />
+                    {/* Título */}
+                    <Title style={styles.cardtitle}>Info 4</Title>
+                    <Divider style={{ backgroundColor: 'black' }} />
+                    <Text style={styles.texto}>{'\n'}En desarrollo :){'\n'}</Text>
 
-                <Card.Actions style={styles.cardbtn}>
+                    <Card.Cover style={styles.cardimg} source={require('./assets/mantenimiento.png')} />
+
+
+
                     {/* Regresar btn */}
                     <TouchableOpacity
                         onPress={() => goBack()}
@@ -28,24 +27,15 @@ export default function Home({navigation, navigation: { goBack } }) {
                         <Text style={styles.botonSalir}>Regresar</Text>
                     </TouchableOpacity>
 
-                    {/* Continuar btn */}
-                    <TouchableOpacity
-                       onPress={() => {navigation.navigate(preguntas)}}
-                        style={styles.boton}>
-                        <Text style={styles.botonOk}>Comenzar</Text>
-                    </TouchableOpacity>
-
-                </Card.Actions>
-              
+                </Card.Content>
             </Card>
-
-            <Text style={styles.nota}>{'\n'}Nota: Te recordamos que toda tu información personal será visible solo para ti.</Text>
-
-           
         </View>
+    </ScrollView>
 
     );
 }
+
+// Estilos
 
 const styles = StyleSheet.create({
     info: {
@@ -59,19 +49,28 @@ const styles = StyleSheet.create({
     card: {
         backgroundColor: '#fff',
         borderColor: '#CFCFCF',
+        justifyContent: 'center',
         borderBottomWidth: 1.5,
         borderLeftWidth: 1.5,
-        borderTopLeftRadius: 10,
-        borderTopRightRadius: 10,
-        borderBottomLeftRadius: 10,
-        borderBottomRightRadius: 10,
+        borderRadius: 10,
         marginTop: 10,
+        padding: 10,
+    },
+    subcard: {
+        backgroundColor: '#fff',
+        borderColor: '#CFCFCF',
+        borderBottomWidth: 1.5,
+        borderLeftWidth: 1.5,
+        borderRadius: 10,
+        padding: 8,
     },
     cardimg: {
-        width: 370,
+        width: 300,
         height: 300,
-        marginLeft: 5,
-        borderRadius:10
+        marginTop: 10,
+        marginBottom: 10,
+        borderRadius: 10,
+        alignSelf: 'center',
     },
     cardtitle: {
         paddingBottom: 5,
@@ -84,11 +83,10 @@ const styles = StyleSheet.create({
         justifyContent: 'center'
     },
     texto: {
-        textAlign: 'center',
-        justifyContent: 'center',
-        alignContent: 'center',
+        textAlign: 'justify',
+        justifyContent: 'flex-start',
+        alignSelf: 'auto',
         fontSize: 20,
-        textAlign: 'left',
     },
     nota: {
         justifyContent: 'flex-start',
@@ -100,7 +98,7 @@ const styles = StyleSheet.create({
         width: 150,
         height: 100,
         justifyContent: 'center',
-        alignContent: 'center',
+        alignSelf: 'center',
     },
     botonSalir: {
         fontSize: 25,

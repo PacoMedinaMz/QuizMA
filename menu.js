@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { BackHandler } from 'react-native';
 import { SafeAreaView, StyleSheet, View, Text, Image, TouchableOpacity, Button } from 'react-native';
+import { Card, Title } from 'react-native-paper';
 import Home from './home';
 import instruccion from './instruccion';
 import Informacion from './Informacion';
@@ -9,16 +10,18 @@ export default function menu({ navigation }) {
 
     return (
         <View style={styles.menu}>
-
+            
+          
             {/* Título */}
             <View><Text style={styles.titleHome}>Bienvenido</Text></View>
+            <Card.Cover style={styles.cardimg} source={require('./assets/logo1.png')} />
             <View><Text style={styles.textoCentrado}>Selecciona una opción:</Text></View>
             {/* BOTONES */}
 
             <View style={styles.top}>
 
                 <TouchableOpacity
-                    onPress={()=>{navigation.navigate(Home)}}
+                    onPress={() => { navigation.navigate(Home) }}
                     style={styles.boton}>
                     <Text style={styles.botonhome}>Empezar</Text>
                 </TouchableOpacity>
@@ -26,22 +29,22 @@ export default function menu({ navigation }) {
 
             <View style={styles.middle}>
                 <TouchableOpacity
-                     onPress={()=>{navigation.navigate(instruccion)}}
+                    onPress={() => { navigation.navigate(instruccion) }}
                     style={styles.boton}>
                     <Text style={styles.botonhome}>¿Cómo Funciona?</Text>
                 </TouchableOpacity>
             </View>
             <View style={styles.middle}>
                 <TouchableOpacity
-                   onPress={()=>{navigation.navigate(Informacion)}}
+                    onPress={() => { navigation.navigate(Informacion) }}
                     style={styles.boton}>
                     <Text style={styles.botonhome}>Más Información</Text>
                 </TouchableOpacity>
             </View>
-            
+
             <View style={styles.bottom}>
                 <TouchableOpacity
-                    onPress={()=>BackHandler.exitApp()}
+                    onPress={() => BackHandler.exitApp()}
                     style={styles.boton}>
                     <Text style={styles.botonhome}>Salir</Text>
                 </TouchableOpacity>
@@ -63,6 +66,14 @@ const styles = StyleSheet.create({
         padding: 1,
         justifyContent: 'center',
     },
+    cardimg: {
+        width: 100,
+        height: 100,
+        marginTop: 10,
+        marginBottom: 10,
+        borderRadius: 10,
+        alignSelf: 'center'
+    },
     titleStyle: {
         padding: 15,
         textAlign: 'center',
@@ -72,6 +83,7 @@ const styles = StyleSheet.create({
     titleHome: {
         marginTop: 100,
         textAlign: 'center',
+        alignSelf: 'center',
         fontSize: 35,
         fontWeight: 'bold',
     },
@@ -126,19 +138,19 @@ const styles = StyleSheet.create({
         fontSize: 25,
         textAlign: 'center',
         color: '#fff',
-        
+
     },
     menu: {
-        flex: .7,
+        flex: 1,
         justifyContent: "space-between",
         backgroundColor: "#F3F3F3",
-        padding: 20,
+        padding: 50,
         margin: 15,
     },
     top: {
         flex: 0.15,
         backgroundColor: "#FF4646",
-        borderColor:'#CFCFCF',
+        borderColor: '#CFCFCF',
         borderBottomWidth: 3,
         borderLeftWidth: 3,
         borderTopLeftRadius: 20,
@@ -152,7 +164,7 @@ const styles = StyleSheet.create({
     middle: {
         flex: 0.15,
         backgroundColor: "#FA7373",
-        borderColor:'#CFCFCF',
+        borderColor: '#CFCFCF',
         borderBottomWidth: 3,
         borderLeftWidth: 3,
         borderTopLeftRadius: 20,
@@ -165,7 +177,7 @@ const styles = StyleSheet.create({
     bottom: {
         flex: 0.15,
         backgroundColor: "#FFB8B8",
-        borderColor:'#CFCFCF',
+        borderColor: '#CFCFCF',
         borderBottomWidth: 3,
         borderLeftWidth: 3,
         borderTopLeftRadius: 20,
