@@ -17,4 +17,9 @@ jobs:
           expo-version: 4.x
           expo-token: egHbNBnEIXjyO7rNijSBtNCY7Na-Zh2dd6Mm9UyI
       - run: yarn install
+      
+      - name: Instalar dependencias
+        run: |
+          npm install --save react-native-gesture-handler
+      
       - run: expo publish
