@@ -15,6 +15,7 @@ jobs:
         with:
           expo-version: 4.x
           expo-token: ${{ secrets.EXPO_TOKEN }}
+          expo-cache: true
       - run: yarn install
       - name: Build Android APK Bundle
         run: expo build:android
