@@ -5,6 +5,8 @@ import { Card, Title } from 'react-native-paper';
 import Home from './home';
 import instruccion from './instruccion';
 import Informacion from './Informacion';
+import Ayuda from './Ayuda';
+import Formulario from './Formulario';
 
 export default function menu({ navigation }) {
 
@@ -39,6 +41,14 @@ export default function menu({ navigation }) {
                     onPress={() => { navigation.navigate(Informacion) }}
                     style={styles.boton}>
                     <Text style={styles.botonhome}>Más Información</Text>
+                </TouchableOpacity>
+            </View>
+
+            <View style={styles.bottom}>
+                <TouchableOpacity
+                    onPress={() => { navigation.navigate(Ayuda) }}
+                    style={styles.boton}>
+                    <Text style={styles.botonhome}>Ayúdanos</Text>
                 </TouchableOpacity>
             </View>
 

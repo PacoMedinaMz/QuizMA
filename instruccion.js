@@ -31,6 +31,12 @@ export default function instruccion({navigation: { goBack } }) {
                             en base a tus elecciones, te recomendaremos los mejores métodos y consejos específicos para ti.
                         </Text>
 
+
+                        <Text style={styles.texto}>{'\n'}
+                            <Text style={{ fontWeight: "bold" }}>"Ayúdanos"</Text> Es un apartado en donde nos puedes ayudar a recolectar información, para que 
+                            nuestros resultados sean más precisos.
+                        </Text>
+
                         <Card.Cover style={styles.cardimg} source={require('./assets/inst2.jpg')} />
 
                         <Title style={{ fontWeight: "bold" }}>{'\n'}Recuerda que...</Title>

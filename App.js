@@ -17,6 +17,8 @@ import info1 from './info1';
 import info2 from './info2';
 import info3 from './info3';
 import info4 from './info4';
+import Ayuda from './Ayuda';
+import Formulario from './Formulario';
 
 const Stack = createStackNavigator();
 
@@ -73,6 +75,8 @@ const App = ({ navigation }) => {
             <Stack.Screen name="info2" component={info2}></Stack.Screen>
             <Stack.Screen name="info3" component={info3}></Stack.Screen>
             <Stack.Screen name="info4" component={info4}></Stack.Screen>
+            <Stack.Screen name="Ayuda" component={Ayuda}></Stack.Screen>
+            <Stack.Screen name="Formulario" component={Formulario}></Stack.Screen>
           </Stack.Navigator>
         </NavigationContainer>
 
