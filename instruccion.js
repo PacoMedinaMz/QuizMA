@@ -20,7 +20,7 @@ export default function instruccion({navigation: { goBack } }) {
                         {/* ¿Qué se puede hacer? */}
                         <Title style={{ fontWeight: "bold" }}>¿Qué se puede hacer?</Title>
                         <Text style={styles.texto}>Dentro de la aplicación se puede consultar información de manera libre en el apartado de
-                            <Text style={{ fontWeight: "bold" }}> "Más Información"</Text>, en el cuál podras aprender muchas cosas nuevas.
+                            <Text style={{ fontWeight: "bold" }}> "Más Información"</Text>, en el cuál podras aprender muchas cosas nuevas acerca de los anticonceptivos y como utilizarlos.
                         </Text>
 
                         <Card.Cover style={styles.cardimg} source={require('./assets/anatommas.jpg')} />
