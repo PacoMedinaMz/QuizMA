@@ -13,7 +13,7 @@ export default function Ayuda({navigation, navigation: { goBack } }) {
                 <Card.Content>
                     <Title style={styles.cardtitle}>¡Tú tambien cuentas!</Title>
                     <Divider style={{ backgroundColor: 'blue' }} />
-                    <Text style={styles.texto}>{'\n'}Tendrás que ayudarnos a contestar un breve formulario con el cúal nos podrás ayudar a mejorar los resultados que brindamos.</Text>
+                    <Text style={styles.texto}>{'\n'}Ayudarnos a contestar un breve formulario con el cúal nos podrás ayudar a mejorar los resultados que brindamos.</Text>
                     <Text style={styles.texto}>{'\n'}De esta manera, podremos mejorar y tener resultados más precisos.{'\n'}</Text>
                    
                 </Card.Content>
@@ -39,7 +39,7 @@ export default function Ayuda({navigation, navigation: { goBack } }) {
               
             </Card>
 
-            <Text style={styles.nota}>Nota: Te recordamos que toda tu información personal esta segura con nosotros.</Text>
+            <Text style={styles.nota}>Nota: No necesitamos información personal</Text>
 
            
         </View>
