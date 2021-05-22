@@ -2,7 +2,7 @@ import React from 'react';
 import { View, StyleSheet, ScrollView, Text, Image, TouchableOpacity } from 'react-native'
 import { Divider } from 'react-native-elements';
 import { Avatar, Button, Card, Title, Paragraph } from 'react-native-paper';
-import preguntas from './preguntas';
+import P1 from './P1';
 
 export default function Home({navigation, navigation: { goBack } }) {
 
@@ -30,7 +30,7 @@ export default function Home({navigation, navigation: { goBack } }) {
 
                     {/* Continuar btn */}
                     <TouchableOpacity
-                       onPress={() => {navigation.navigate(preguntas)}}
+                       onPress={() => {navigation.navigate(P1)}}
                         style={styles.boton}>
                         <Text style={styles.botonOk}>Comenzar</Text>
                     </TouchableOpacity>

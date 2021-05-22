@@ -12,13 +12,17 @@ import Home from './home';
 import menu from './menu';
 import instruccion from './instruccion';
 import Informacion from './Informacion';
-import preguntas from './preguntas';
+import P1 from './P1';
 import info1 from './info1';
 import info2 from './info2';
 import info3 from './info3';
 import info4 from './info4';
 import Ayuda from './Ayuda';
 import Formulario from './Formulario';
+import P2 from './P2';
+import P3 from './P3';
+
+import R1 from './R1';
 
 const Stack = createStackNavigator();
 
@@ -70,13 +74,18 @@ const App = ({ navigation }) => {
             <Stack.Screen name="Home" component={Home}></Stack.Screen>
             <Stack.Screen name="instruccion" component={instruccion}></Stack.Screen>
             <Stack.Screen name="Informacion" component={Informacion}></Stack.Screen>
-            <Stack.Screen name="preguntas" component={preguntas}></Stack.Screen>
+            <Stack.Screen name="P1" component={P1}></Stack.Screen>
             <Stack.Screen name="info1" component={info1}></Stack.Screen>
             <Stack.Screen name="info2" component={info2}></Stack.Screen>
             <Stack.Screen name="info3" component={info3}></Stack.Screen>
             <Stack.Screen name="info4" component={info4}></Stack.Screen>
             <Stack.Screen name="Ayuda" component={Ayuda}></Stack.Screen>
             <Stack.Screen name="Formulario" component={Formulario}></Stack.Screen>
+
+            <Stack.Screen name="P2" component={P2}></Stack.Screen>
+            <Stack.Screen name="P3" component={P3}></Stack.Screen>
+
+            <Stack.Screen name="R1" component={R1}></Stack.Screen>
           </Stack.Navigator>
         </NavigationContainer>
 
