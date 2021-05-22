@@ -2,7 +2,7 @@ import React from 'react';
 import { View, StyleSheet, ScrollView, Text, Image, TouchableOpacity } from 'react-native'
 import { Divider } from 'react-native-elements';
 import { Avatar, Button, Card, Title, Paragraph } from 'react-native-paper';
-
+import Form from './Form.js';
 
 export default function Formulario({navigation: { goBack } }) {
 
@@ -17,6 +17,7 @@ export default function Formulario({navigation: { goBack } }) {
                     <Text style={styles.texto}>{'\n'}En desarrollo :){'\n'}</Text>
 
                     <Card.Cover style={styles.cardimg} source={require('./assets/mantenimiento.png')} />
+                    <Form></Form>
 
 
 
