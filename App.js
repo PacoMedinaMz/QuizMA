@@ -75,15 +75,16 @@ const App = ({ navigation }) => {
             <Stack.Screen name="Menu" component={menu}></Stack.Screen>
             <Stack.Screen name="Home" component={Home}></Stack.Screen>
             <Stack.Screen name="Instruccion" component={Instruccion}></Stack.Screen>
+            <Stack.Screen name="Ayuda" component={Ayuda}></Stack.Screen>
+            <Stack.Screen name="Formulario" component={Formulario}></Stack.Screen>
             <Stack.Screen name="Informacion" component={Informacion}></Stack.Screen>
-            <Stack.Screen name="P1" component={P1}></Stack.Screen>
+            
             <Stack.Screen name="Info1" component={Info1}></Stack.Screen>
             <Stack.Screen name="Info2" component={Info2}></Stack.Screen>
             <Stack.Screen name="Info3" component={Info3}></Stack.Screen>
             <Stack.Screen name="Info4" component={Info4}></Stack.Screen>
-            <Stack.Screen name="Ayuda" component={Ayuda}></Stack.Screen>
-            <Stack.Screen name="Formulario" component={Formulario}></Stack.Screen>
-
+            
+            <Stack.Screen name="P1" component={P1}></Stack.Screen>
             <Stack.Screen name="P2" component={P2}></Stack.Screen>
             <Stack.Screen name="P3" component={P3}></Stack.Screen>
 

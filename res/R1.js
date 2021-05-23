@@ -2,6 +2,7 @@ import React from 'react';
 import { View, StyleSheet, FlatList, ScrollView, Text, Image, TouchableOpacity } from 'react-native'
 import { Divider } from 'react-native-elements';
 import { Avatar, Button, Card, Title, Paragraph } from 'react-native-paper';
+import Home from '../home';
 
 
 export default function R1({ navigation: { goBack } }) {
@@ -22,8 +23,14 @@ export default function R1({ navigation: { goBack } }) {
                         <Card.Cover style={styles.cardimg} source={require('../assets/anticoncep1.jpg')} />
 
                     </Card.Content>
+                    <TouchableOpacity
+                        
+                        style={styles.boton}>
+                        <Text style={styles.botonSalir}>Salir</Text>
+                    </TouchableOpacity>
                 </Card>
             </View>
+            
         </ScrollView>
 
     );
