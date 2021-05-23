@@ -7,7 +7,8 @@ import P1 from './preg/P1';
 export default function Home({navigation, navigation: { goBack } }) {
 
     return (
-        <View style={styles.info}>
+        <ScrollView style={styles.scrollView}>
+            <View style={styles.info}>
             
             <Card style={styles.card}>
                 <Card.Content>
@@ -43,7 +44,8 @@ export default function Home({navigation, navigation: { goBack } }) {
 
            
         </View>
-
+        </ScrollView>
+        
     );
 }
 

@@ -14,13 +14,21 @@ export default function Formulario({navigation: { goBack } }) {
                     {/* Título */}
                     <Title style={styles.cardtitle}>Formulario</Title>
                     <Divider style={{ backgroundColor: 'black' }} />
-                    <Text style={styles.texto}>{'\n'}En desarrollo :){'\n'}</Text>
-
-                    <Card.Cover style={styles.cardimg} source={require('./assets/mantenimiento.png')} />
+                    
                     <Form></Form>
 
 
-
+                    <Card.Content>
+                        <Title style={styles.cardtitle}>Los parametros de la encuestan son: </Title>
+                        <Divider style={{ backgroundColor: 'blue' }} />
+                        <Text style={styles.texto}>{'\n'}</Text>
+                        <Text style={styles.texto}>{'\n'}1 Nula.</Text>
+                        <Text style={styles.texto}>{'\n'}2 Mala.</Text>
+                        <Text style={styles.texto}>{'\n'}3 Regular.</Text>
+                        <Text style={styles.texto}>{'\n'}4 Buena.</Text>
+                        <Text style={styles.texto}>{'\n'}5 Excelente.</Text>
+                   
+                    </Card.Content>
                     {/* Regresar btn */}
                     <TouchableOpacity
                         onPress={() => goBack()}
@@ -84,7 +92,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center'
     },
     texto: {
-        textAlign: 'justify',
+        textAlign: 'center',
         justifyContent: 'flex-start',
         alignSelf: 'auto',
         fontSize: 20,

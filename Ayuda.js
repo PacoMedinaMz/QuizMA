@@ -7,7 +7,8 @@ import Formulario from './Formulario';
 export default function Ayuda({navigation, navigation: { goBack } }) {
 
     return (
-        <View style={styles.info}>
+        <ScrollView style={styles.scrollView}>
+            <View style={styles.info}>
             
             <Card style={styles.card}>
                 <Card.Content>
@@ -44,6 +45,7 @@ export default function Ayuda({navigation, navigation: { goBack } }) {
            
         </View>
 
+        </ScrollView>
     );
 }
 

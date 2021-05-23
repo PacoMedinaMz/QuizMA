@@ -3,7 +3,7 @@ import { BackHandler } from 'react-native';
 import { SafeAreaView, StyleSheet, View, Text, Image, TouchableOpacity, Button } from 'react-native';
 import { Card, Title } from 'react-native-paper';
 import Home from './home';
-import instruccion from './instruccion';
+import Instruccion from './Instruccion';
 import Informacion from './Informacion';
 import Ayuda from './Ayuda';
 import Formulario from './Formulario';
@@ -31,7 +31,7 @@ export default function menu({ navigation }) {
 
             <View style={styles.middle}>
                 <TouchableOpacity
-                    onPress={() => { navigation.navigate(instruccion) }}
+                    onPress={() => { navigation.navigate(Instruccion) }}
                     style={styles.boton}>
                     <Text style={styles.botonhome}>¿Cómo Funciona?</Text>
                 </TouchableOpacity>
