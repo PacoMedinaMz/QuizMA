@@ -12,15 +12,17 @@ import Home from './home';
 import menu from './menu';
 import instruccion from './instruccion';
 import Informacion from './Informacion';
-import P1 from './P1';
+
 import info1 from './info1';
 import info2 from './info2';
 import info3 from './info3';
 import info4 from './info4';
 import Ayuda from './Ayuda';
 import Formulario from './Formulario';
-import P2 from './P2';
-import P3 from './P3';
+
+import P1 from './preg/P1';
+import P2 from './preg/P2';
+import P3 from './preg/P3';
 
 import R1 from './res/R1';
 

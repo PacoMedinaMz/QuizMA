@@ -2,7 +2,7 @@ import React from 'react';
 import { View, StyleSheet, ScrollView, Text, Image, TouchableOpacity } from 'react-native'
 import { Divider } from 'react-native-elements';
 import { Avatar, Button, Card, Title, Paragraph } from 'react-native-paper';
-import P1 from './P1';
+import P1 from './preg/P1';
 
 export default function Home({navigation, navigation: { goBack } }) {
 

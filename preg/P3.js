@@ -2,21 +2,21 @@ import React from 'react';
 import { View, StyleSheet, ScrollView, Text, Image, TouchableOpacity } from 'react-native'
 import { Divider } from 'react-native-elements';
 import { Card, Title } from 'react-native-paper';
-import P3 from './P3';
+import R1 from '../res/R1';
 
-export default function P2({ navigation, navigation: { goBack } }) {
+export default function P3({ navigation, navigation: { goBack } }) {
 
     return (
         <View style={styles.info}>
             <Card style={styles.card}>
                 <Card.Content>
                     {/* Pregunta */}
-                    <Title style={styles.cardtitle}>¿Lo usarías en periodos de tiempo bien definidos?</Title>
+                    <Title style={styles.cardtitle}>¿Eres alérgico al látex?</Title>
                     <Divider style={{ backgroundColor: 'blue' }} />
                 </Card.Content>
 
                 {/* Imagen de la pregunta */}
-                <Card.Cover style={styles.cardimg} source={require('./assets/preg1.jpg')} />
+                <Card.Cover style={styles.cardimg} source={require('../assets/preg1.jpg')} />
 
             </Card>
 
@@ -31,9 +31,15 @@ export default function P2({ navigation, navigation: { goBack } }) {
 
 
                 <TouchableOpacity
-                    onPress={() => { navigation.navigate(P3) }}    //Cambiar este para redirigir a sigiuente pregunta
+                    onPress={() => { navigation.navigate(R1) }}  //Cambiar este para redirigir a sigiuente pregunta
                     style={styles.respuestabtn}>
                     <Text style={styles.botonOk}>No</Text>
+                </TouchableOpacity>
+
+                <TouchableOpacity
+                    // onPress={() => { navigation.navigate() }} //Cambiar este para redirigir a sigiuente pregunta
+                    style={styles.respuestabtn}>
+                    <Text style={styles.botonOk}>No lo sé</Text>
                 </TouchableOpacity>
             </Card>
 
