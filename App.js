@@ -10,7 +10,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 //IMPORTS DE PAGINAS
 import Home from './home';
 import menu from './menu';
-import Instruccion from './Instruccion';
+import instruccion from './Instruccion'
 import Informacion from './Informacion';
 import Ayuda from './Ayuda';
 import Formulario from './Formulario';
@@ -85,7 +85,7 @@ const App = ({ navigation }) => {
           <Stack.Navigator initialRouteName="menu">
             <Stack.Screen name="Menu" component={menu}></Stack.Screen>
             <Stack.Screen name="Home" component={Home}></Stack.Screen>
-            <Stack.Screen name="Instruccion" component={Instruccion}></Stack.Screen>
+            <Stack.Screen name="Instruccion" component={instruccion}></Stack.Screen>
             <Stack.Screen name="Ayuda" component={Ayuda}></Stack.Screen>
             <Stack.Screen name="Formulario" component={Formulario}></Stack.Screen>
             <Stack.Screen name="Informacion" component={Informacion}></Stack.Screen>

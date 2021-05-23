@@ -4,42 +4,43 @@ import { Divider } from 'react-native-elements';
 import { Avatar, Button, Card, Title, Paragraph } from 'react-native-paper';
 import Form from './Form.js';
 
-export default function Formulario({navigation: { goBack } }) {
+export default function Formulario({ navigation: { goBack } }) {
 
     return (
         <ScrollView style={styles.scrollView}>
-        <View style={styles.info}>
-            <Card style={styles.card}>
-                <Card.Content>
+            <View style={styles.info}>
+                <Card style={styles.card}>
                     {/* Título */}
-                    <Title style={styles.cardtitle}>Formulario</Title>
+                    <Title style={styles.cardtitle}>Mi Experiencia QuizMA</Title>
                     <Divider style={{ backgroundColor: 'black' }} />
-                    
                     <Form></Form>
+                </Card>
 
-
+                <Card style={styles.card}>
                     <Card.Content>
-                        <Title style={styles.cardtitle}>Los parametros de la encuestan son: </Title>
-                        <Divider style={{ backgroundColor: 'blue' }} />
-                        <Text style={styles.texto}>{'\n'}</Text>
-                        <Text style={styles.texto}>{'\n'}1 Nula.</Text>
-                        <Text style={styles.texto}>{'\n'}2 Mala.</Text>
-                        <Text style={styles.texto}>{'\n'}3 Regular.</Text>
-                        <Text style={styles.texto}>{'\n'}4 Buena.</Text>
-                        <Text style={styles.texto}>{'\n'}5 Excelente.</Text>
-                   
-                    </Card.Content>
-                    {/* Regresar btn */}
-                    <TouchableOpacity
-                        onPress={() => goBack()}
-                        style={styles.boton}>
-                        <Text style={styles.botonSalir}>Regresar</Text>
-                    </TouchableOpacity>
 
-                </Card.Content>
-            </Card>
-        </View>
-    </ScrollView>
+                        <Card.Content>
+                            <Title style={styles.cardtitle}>¿Cómo evaluar?</Title>
+                            <Divider style={{ backgroundColor: 'black' }} />
+                            <Text style={styles.texto}>{'\n'}A continuación se muestran los valores a tomar en cuenta siendo 1 el más bajo y 5 el más alto.</Text>
+                            <Text style={styles.texto}>{'\n'}Nula (1)</Text>
+                            <Text style={styles.texto}>{'\n'}Mala (2)</Text>
+                            <Text style={styles.texto}>{'\n'}Regular (3)</Text>
+                            <Text style={styles.texto}>{'\n'}Buena (4)</Text>
+                            <Text style={styles.texto}>{'\n'}Excelente (5)</Text>
+
+                        </Card.Content>
+                        {/* Regresar btn */}
+                        <TouchableOpacity
+                            onPress={() => goBack()}
+                            style={styles.boton}>
+                            <Text style={styles.botonSalir}>Regresar</Text>
+                        </TouchableOpacity>
+
+                    </Card.Content>
+                </Card>
+            </View>
+        </ScrollView>
 
     );
 }
