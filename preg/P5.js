@@ -2,18 +2,17 @@ import React from 'react';
 import { View, StyleSheet, ScrollView, Text, Image, TouchableOpacity } from 'react-native'
 import { Divider } from 'react-native-elements';
 import { Card, Title } from 'react-native-paper';
-import R1 from '../res/R1';
-import R3 from '../res/R3';
-import R4 from '../res/R4';
+import P6 from './P6';
+import R6 from '../res/R6';
 
-export default function P3({ navigation, navigation: { goBack } }) {
+export default function P5({ navigation, navigation: { goBack } }) {
 
     return (
         <View style={styles.info}>
             <Card style={styles.card}>
                 <Card.Content>
                     {/* Pregunta */}
-                    <Title style={styles.cardtitle}>¿Eres alérgico al látex?</Title>
+                    <Title style={styles.cardtitle}>¿Te incomoda tener parches en la piel?</Title>
                     <Divider style={{ backgroundColor: 'blue' }} />
                 </Card.Content>
 
@@ -26,22 +25,16 @@ export default function P3({ navigation, navigation: { goBack } }) {
             <Card style={styles.respuestas}>
 
                 <TouchableOpacity
-                    onPress={() => { navigation.navigate(R4) }}   //Cambiar este para redirigir a sigiuente pregunta
+                    onPress={() => { navigation.navigate(P6) }}   //Cambiar este para redirigir a sigiuente pregunta
                     style={styles.respuestabtn}>
                     <Text style={styles.botonSalir}>Si</Text>
                 </TouchableOpacity>
 
 
                 <TouchableOpacity
-                    onPress={() => { navigation.navigate(R1) }}  //Cambiar este para redirigir a sigiuente pregunta
+                    onPress={() => { navigation.navigate(R6) }}  //Cambiar este para redirigir a sigiuente pregunta
                     style={styles.respuestabtn}>
                     <Text style={styles.botonOk}>No</Text>
-                </TouchableOpacity>
-
-                <TouchableOpacity
-                    onPress={() => { navigation.navigate(R3) }} //Cambiar este para redirigir a sigiuente pregunta
-                    style={styles.respuestabtn}>
-                    <Text style={styles.botonOk}>No lo sé</Text>
                 </TouchableOpacity>
             </Card>
 

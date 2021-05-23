@@ -2,18 +2,18 @@ import React from 'react';
 import { View, StyleSheet, ScrollView, Text, Image, TouchableOpacity } from 'react-native'
 import { Divider } from 'react-native-elements';
 import { Card, Title } from 'react-native-paper';
-import R1 from '../res/R1';
-import R3 from '../res/R3';
-import R4 from '../res/R4';
+import R7 from '../res/R7';
+import R8 from '../res/R8';
+import R9 from '../res/R9';
 
-export default function P3({ navigation, navigation: { goBack } }) {
+export default function P6({ navigation, navigation: { goBack } }) {
 
     return (
         <View style={styles.info}>
             <Card style={styles.card}>
                 <Card.Content>
                     {/* Pregunta */}
-                    <Title style={styles.cardtitle}>¿Eres alérgico al látex?</Title>
+                    <Title style={styles.cardtitle}>¿Qué prefieres? </Title>
                     <Divider style={{ backgroundColor: 'blue' }} />
                 </Card.Content>
 
@@ -26,22 +26,22 @@ export default function P3({ navigation, navigation: { goBack } }) {
             <Card style={styles.respuestas}>
 
                 <TouchableOpacity
-                    onPress={() => { navigation.navigate(R4) }}   //Cambiar este para redirigir a sigiuente pregunta
+                    onPress={() => { navigation.navigate(R7) }}   //Cambiar este para redirigir a sigiuente pregunta
                     style={styles.respuestabtn}>
-                    <Text style={styles.botonSalir}>Si</Text>
+                    <Text style={styles.botonSalir}>Inyecciones</Text>
                 </TouchableOpacity>
 
 
                 <TouchableOpacity
-                    onPress={() => { navigation.navigate(R1) }}  //Cambiar este para redirigir a sigiuente pregunta
+                    onPress={() => { navigation.navigate(R8) }}  //Cambiar este para redirigir a sigiuente pregunta
                     style={styles.respuestabtn}>
-                    <Text style={styles.botonOk}>No</Text>
+                    <Text style={styles.botonOk}>Pastillas</Text>
                 </TouchableOpacity>
 
                 <TouchableOpacity
-                    onPress={() => { navigation.navigate(R3) }} //Cambiar este para redirigir a sigiuente pregunta
+                    onPress={() => { navigation.navigate(R9) }} //Cambiar este para redirigir a sigiuente pregunta
                     style={styles.respuestabtn}>
-                    <Text style={styles.botonOk}>No lo sé</Text>
+                    <Text style={styles.botonOk}>Otros</Text>
                 </TouchableOpacity>
             </Card>
 

@@ -23,8 +23,19 @@ import Info4 from './info/Info4';
 import P1 from './preg/P1';
 import P2 from './preg/P2';
 import P3 from './preg/P3';
+import P4 from './preg/P4';
+import P5 from './preg/P5';
+import P6 from './preg/P6';
 
 import R1 from './res/R1';
+import R2 from './res/R2';
+import R3 from './res/R3';
+import R4 from './res/R4';
+import R5 from './res/R5';
+import R6 from './res/R6';
+import R7 from './res/R7';
+import R8 from './res/R8';
+import R9 from './res/R9';
 
 const Stack = createStackNavigator();
 
@@ -87,8 +98,20 @@ const App = ({ navigation }) => {
             <Stack.Screen name="P1" component={P1}></Stack.Screen>
             <Stack.Screen name="P2" component={P2}></Stack.Screen>
             <Stack.Screen name="P3" component={P3}></Stack.Screen>
+            <Stack.Screen name="P4" component={P4}></Stack.Screen>
+            <Stack.Screen name="P5" component={P5}></Stack.Screen>
+            <Stack.Screen name="P6" component={P6}></Stack.Screen>
 
             <Stack.Screen name="R1" component={R1}></Stack.Screen>
+            <Stack.Screen name="R2" component={R2}></Stack.Screen>
+            <Stack.Screen name="R3" component={R3}></Stack.Screen>
+            <Stack.Screen name="R4" component={R4}></Stack.Screen>
+            <Stack.Screen name="R5" component={R5}></Stack.Screen>
+            <Stack.Screen name="R6" component={R6}></Stack.Screen>
+            <Stack.Screen name="R7" component={R7}></Stack.Screen>
+            <Stack.Screen name="R8" component={R8}></Stack.Screen>
+            <Stack.Screen name="R9" component={R9}></Stack.Screen>
+
           </Stack.Navigator>
         </NavigationContainer>
 

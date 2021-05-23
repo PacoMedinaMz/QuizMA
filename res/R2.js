@@ -5,7 +5,7 @@ import { Avatar, Button, Card, Title, Paragraph } from 'react-native-paper';
 import Home from '../home';
 
 
-export default function R1({ navigation, navigation: { goBack } }) {
+export default function R2({ navigation, navigation: { goBack } }) {
 
     return (
         <ScrollView style={styles.scrollView}>
@@ -16,8 +16,9 @@ export default function R1({ navigation, navigation: { goBack } }) {
                         <Title style={styles.cardtitle}>Resultado</Title>
                         <Divider style={{ backgroundColor: 'black' }} />
 
-                        <Text style={styles.texto}>Puedes usar cualquier tipo de Condón. Según tu sexo puedes usar 
-                            el condón masculino o femenino. {'\n'}
+                        <Text style={styles.texto}>Te recomendamos la pastilla del día siguiente. Debes tener extremado cuidado de no exceder el máximo de dosis. De no tener cuidado puede generarte un embarazo no deseado. 
+                            Se recomienda usar solo en emergencias. 
+                            {'\n'}
                         </Text>
 
                         <Card.Cover style={styles.cardimg} source={require('../assets/anticoncep1.jpg')} />

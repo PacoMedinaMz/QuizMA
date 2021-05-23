@@ -3,6 +3,7 @@ import { View, StyleSheet, ScrollView, Text, Image, TouchableOpacity } from 'rea
 import { Divider } from 'react-native-elements';
 import { Card, Title } from 'react-native-paper';
 import P3 from './P3';
+import P4 from './P4';
 
 export default function P2({ navigation, navigation: { goBack } }) {
 
@@ -24,7 +25,7 @@ export default function P2({ navigation, navigation: { goBack } }) {
             <Card style={styles.respuestas}>
 
                 <TouchableOpacity
-                    // onPress={() => goBack()}    //Cambiar este para redirigir a sigiuente pregunta
+                    onPress={() => { navigation.navigate(P4) }}     //Cambiar este para redirigir a sigiuente pregunta
                     style={styles.respuestabtn}>
                     <Text style={styles.botonSalir}>Si</Text>
                 </TouchableOpacity>
