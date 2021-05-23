@@ -18,7 +18,7 @@ export default function P3({ navigation, navigation: { goBack } }) {
                 </Card.Content>
 
                 {/* Imagen de la pregunta */}
-                <Card.Cover style={styles.cardimg} source={require('../assets/preg1.jpg')} />
+                <Card.Cover style={styles.cardimg} source={require('../assets/inst2.jpg')} />
 
             </Card>
 
