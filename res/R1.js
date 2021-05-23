@@ -5,7 +5,7 @@ import { Avatar, Button, Card, Title, Paragraph } from 'react-native-paper';
 import Home from '../home';
 
 
-export default function R1({ navigation: { goBack } }) {
+export default function R1({ navigation, navigation: { goBack } }) {
 
     return (
         <ScrollView style={styles.scrollView}>
@@ -24,7 +24,9 @@ export default function R1({ navigation: { goBack } }) {
 
                     </Card.Content>
                     <TouchableOpacity
-                        
+                        onPress={() => {
+                            navigation.navigate("Home");
+                          }}
                         style={styles.boton}>
                         <Text style={styles.botonSalir}>Salir</Text>
                     </TouchableOpacity>
