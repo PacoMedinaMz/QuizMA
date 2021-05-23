@@ -21,7 +21,7 @@ export default function R8({ navigation, navigation: { goBack } }) {
                             otras cosas según el tipo de las pastillas.  {'\n'}
                         </Text>
 
-                        <Card.Cover style={styles.cardimg} source={require('../assets/anticoncep1.jpg')} />
+                        <Card.Cover style={styles.cardimg} source={require('../assets/ac2.png')} />
 
                     </Card.Content>
                     <TouchableOpacity

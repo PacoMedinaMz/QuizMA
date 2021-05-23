@@ -20,7 +20,7 @@ export default function R9({ navigation, navigation: { goBack } }) {
                             él te dará indicaciones de uso y recomendaciones. {'\n'}
                         </Text>
 
-                        <Card.Cover style={styles.cardimg} source={require('../assets/anticoncep1.jpg')} />
+                        <Card.Cover style={styles.cardimg} source={require('../assets/ac11.png')} />
 
                     </Card.Content>
                     <TouchableOpacity

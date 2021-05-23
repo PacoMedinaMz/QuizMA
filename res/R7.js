@@ -20,7 +20,7 @@ export default function R7({ navigation, navigation: { goBack } }) {
                             cierto tiempo. {'\n'}
                         </Text>
 
-                        <Card.Cover style={styles.cardimg} source={require('../assets/anticoncep1.jpg')} />
+                        <Card.Cover style={styles.cardimg} source={require('../assets/ac4.png')} />
 
                     </Card.Content>
                     <TouchableOpacity

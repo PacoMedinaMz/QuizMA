@@ -20,7 +20,7 @@ export default function R5({ navigation, navigation: { goBack } }) {
                             visitar un experto para poder usarlo y tener visitas regulares para revisar su estado.   {'\n'}
                         </Text>
 
-                        <Card.Cover style={styles.cardimg} source={require('../assets/anticoncep1.jpg')} />
+                        <Card.Cover style={styles.cardimg} source={require('../assets/ac6.png')} />
 
                     </Card.Content>
                     <TouchableOpacity

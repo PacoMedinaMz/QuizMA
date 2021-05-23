@@ -20,7 +20,7 @@ export default function R1({ navigation, navigation: { goBack } }) {
                             el condón masculino o femenino. {'\n'}
                         </Text>
 
-                        <Card.Cover style={styles.cardimg} source={require('../assets/anticoncep1.jpg')} />
+                        <Card.Cover style={styles.cardimg} source={require('../assets/ac1.png')} />
 
                     </Card.Content>
                     <TouchableOpacity

@@ -21,7 +21,7 @@ export default function R2({ navigation, navigation: { goBack } }) {
                             {'\n'}
                         </Text>
 
-                        <Card.Cover style={styles.cardimg} source={require('../assets/anticoncep1.jpg')} />
+                        <Card.Cover style={styles.cardimg} source={require('../assets/ac5.png')} />
 
                     </Card.Content>
                     <TouchableOpacity

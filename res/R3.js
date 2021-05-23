@@ -19,7 +19,7 @@ export default function R3({ navigation, navigation: { goBack } }) {
                         <Text style={styles.texto}>Te recomendamos el uso del condón, pero debes tener cuidado con los condones de látex. {'\n'}
                         </Text>
 
-                        <Card.Cover style={styles.cardimg} source={require('../assets/anticoncep1.jpg')} />
+                        <Card.Cover style={styles.cardimg} source={require('../assets/ac1.png')} />
 
                     </Card.Content>
                     <TouchableOpacity

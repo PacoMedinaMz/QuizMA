@@ -19,7 +19,7 @@ export default function R4({ navigation, navigation: { goBack } }) {
                         <Text style={styles.texto}>Te recomendamos condones de polilsopreno. {'\n'}
                         </Text>
 
-                        <Card.Cover style={styles.cardimg} source={require('../assets/anticoncep1.jpg')} />
+                        <Card.Cover style={styles.cardimg} source={require('../assets/ac1.png')} />
 
                     </Card.Content>
                     <TouchableOpacity
