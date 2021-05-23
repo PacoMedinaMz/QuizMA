@@ -19,7 +19,7 @@ export default function P1({ navigation, navigation: { goBack } }) {
         <Card.Content>
           {/* Pregunta */}
           <Title style={styles.cardtitle}>
-            ¿Buscas opciones para antes o después del acto?
+            ¿Buscas opciones durante o después del acto?
           </Title>
           <Divider style={{ backgroundColor: "blue" }} />
         </Card.Content>
@@ -39,7 +39,7 @@ export default function P1({ navigation, navigation: { goBack } }) {
           }} //Cambiar este para redirigir a sigiuente pregunta
           style={styles.respuestabtn}
         >
-          <Text style={styles.botonSalir}>Antes</Text>
+          <Text style={styles.botonSalir}>Durante</Text>
         </TouchableOpacity>
 
         <TouchableOpacity

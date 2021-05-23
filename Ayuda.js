@@ -17,11 +17,11 @@ export default function Ayuda({ navigation, navigation: { goBack } }) {
       <View style={styles.info}>
         <Card style={styles.card}>
           <Card.Content>
-            <Title style={styles.cardtitle}>¡Tú tambien cuentas!</Title>
+            <Title style={styles.cardtitle}>¡Tú también cuentas!</Title>
             <Divider style={{ backgroundColor: "blue" }} />
             <Text style={styles.texto}>
-              {"\n"}Ayudarnos a contestar un breve formulario con el cúal nos
-              podrás ayudar a mejorar los resultados que brindamos.
+              {"\n"}Contestando un breve cuestionario nos
+              podrás ayudar a mejorar los resultados que te brindamos.
             </Text>
             <Text style={styles.texto}>
               {"\n"}De esta manera, podremos mejorar y tener resultados más
@@ -51,10 +51,6 @@ export default function Ayuda({ navigation, navigation: { goBack } }) {
             </TouchableOpacity>
           </Card.Actions>
         </Card>
-
-        <Text style={styles.nota}>
-          Nota: No necesitamos información personal
-        </Text>
       </View>
     </ScrollView>
   );

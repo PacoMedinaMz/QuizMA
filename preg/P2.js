@@ -21,7 +21,7 @@ export default function P2({ navigation, navigation: { goBack } }) {
           <Title style={styles.cardtitle}>
             ¿Lo usarías en periodos de tiempo bien definidos?
           </Title>
-          <Divider style={{ backgroundColor: "blue" }} />
+          <Divider style={{ backgroundColor: "black" }} />
         </Card.Content>
 
         {/* Imagen de la pregunta */}

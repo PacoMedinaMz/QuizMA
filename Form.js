@@ -120,7 +120,7 @@ class Form extends Component {
         </Card>
 
         <Card style={styles.cardform}>
-          <Text style={styles.texto}>¿Qué te parecio la dinamica del cuestionario? </Text>
+          <Text style={styles.texto}>¿Qué te pareció la dinámica del cuestionario? </Text>
           <TextInput
             style={styles.input}
             placeholder="  (1 - 5)"
@@ -142,7 +142,7 @@ class Form extends Component {
         </Card>
 
         <Card style={styles.cardform}>
-          <Text style={styles.texto}>¿Contribuimos a tu educacion sexual?</Text>
+          <Text style={styles.texto}>¿Contribuímos a tu educación sexual?</Text>
           <TextInput
             style={styles.input}
             placeholder="  (1 - 5)"

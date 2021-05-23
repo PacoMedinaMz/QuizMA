@@ -9,12 +9,6 @@ export default function Formulario({ navigation: { goBack } }) {
     return (
         <ScrollView style={styles.scrollView}>
             <View style={styles.info}>
-                <Card style={styles.card}>
-                    {/* Título */}
-                    <Title style={styles.cardtitle}>Mi Experiencia QuizMA</Title>
-                    <Divider style={{ backgroundColor: 'black' }} />
-                    <Form></Form>
-                </Card>
 
                 <Card style={styles.card}>
                     <Card.Content>
@@ -30,15 +24,21 @@ export default function Formulario({ navigation: { goBack } }) {
                             <Text style={styles.texto}>{'\n'}Excelente (5)</Text>
 
                         </Card.Content>
-                        {/* Regresar btn */}
-                        <TouchableOpacity
-                            onPress={() => goBack()}
-                            style={styles.boton}>
-                            <Text style={styles.botonSalir}>Regresar</Text>
-                        </TouchableOpacity>
-
                     </Card.Content>
                 </Card>
+
+                <Card style={styles.card}>
+                    {/* Título */}
+                    <Title style={styles.cardtitle}>Mi Experiencia QuizMA</Title>
+                    <Divider style={{ backgroundColor: 'black' }} />
+                    <Form></Form>
+                </Card>
+                 {/* Regresar btn */}
+                 <TouchableOpacity
+                        onPress={() => goBack()}
+                        style={styles.boton}>
+                        <Text style={styles.botonSalir}>Regresar</Text>
+                    </TouchableOpacity>
             </View>
         </ScrollView>
 
