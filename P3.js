@@ -2,7 +2,7 @@ import React from 'react';
 import { View, StyleSheet, ScrollView, Text, Image, TouchableOpacity } from 'react-native'
 import { Divider } from 'react-native-elements';
 import { Card, Title } from 'react-native-paper';
-import R1 from './R1';
+import R1 from './res/R1';
 
 export default function P3({ navigation, navigation: { goBack } }) {
 

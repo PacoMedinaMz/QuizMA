@@ -22,7 +22,7 @@ import Formulario from './Formulario';
 import P2 from './P2';
 import P3 from './P3';
 
-import R1 from './R1';
+import R1 from './res/R1';
 
 const Stack = createStackNavigator();
 
