@@ -1,7 +1,15 @@
 import React, { Component } from "react";
-import { StyleSheet, Text, TextInput, View, Button, TouchableHighlight, TouchableOpacity} from "react-native";
+import {
+  StyleSheet,
+  Text,
+  TextInput,
+  View,
+  Button,
+  TouchableHighlight,
+  TouchableOpacity,
+} from "react-native";
 import axios from "axios";
-import { Avatar, Card, Title, Paragraph } from 'react-native-paper';
+import { Avatar, Card, Title, Paragraph } from "react-native-paper";
 
 class Form extends Component {
   constructor() {
@@ -9,7 +17,7 @@ class Form extends Component {
 
     this.state = { cal: "", din: "", edu: "", con: "", exp: "" };
   }
-  
+
   changeCal(cal) {
     if (cal > 0 && cal < 6) {
       this.setState({ cal });
@@ -69,7 +77,6 @@ class Form extends Component {
       this.state.din
     ) {
       console.log("Completo");
-      axios.get("http://35.239.233.69:3000");
 
       var datos = JSON.stringify({
         cal: parseInt(this.state.cal),
@@ -85,21 +92,19 @@ class Form extends Component {
       console.log(datos);
 
       axios
-        .post("http://35.239.233.69:3000/datos", { datos })
+        .post(
+          "http://35.239.233.69:3000/datos",
+          { datos },
+          {
+            "content-type": "application/json",
+            Authorization: "xxx",
+          }
+        )
         .then((res) => {
           console.log(res);
           console.log(res.data);
         })
         .catch((error) => console.log(error));
-      /*
-        fetch('192.168.1.76:3000/datos', {
-          method: 'POST',
-          headers: {
-          Accept: 'application/json',
-            'Content-Type': 'application/json'
-          },
-          body: datos
-          });*/
     } else {
       console.log("Incompleto");
     }
@@ -109,7 +114,9 @@ class Form extends Component {
     return (
       <View style={styles.info}>
         <Card style={styles.cardform}>
-          <Text style={styles.texto}>¿Cómo calificas la calidad de la información?</Text>
+          <Text style={styles.texto}>
+            ¿Cómo calificas la calidad de la información?
+          </Text>
           <TextInput
             style={styles.input}
             placeholder="  (1 - 5)"
@@ -150,10 +157,11 @@ class Form extends Component {
             onChangeText={(con) => this.changeCon(con)}
             keyboardType="number-pad"
           />
-
         </Card>
         <Card style={styles.cardform}>
-          <Text style={styles.texto}>¿Cumplió tus expectativas la aplicación?</Text>
+          <Text style={styles.texto}>
+            ¿Cumplió tus expectativas la aplicación?
+          </Text>
           <TextInput
             style={styles.input}
             placeholder="  (1 - 5)"
@@ -164,12 +172,9 @@ class Form extends Component {
         </Card>
 
         {/* Regresar btn */}
-        <TouchableOpacity
-          onPress={() => this.enviar()}
-          style={styles.boton}>
+        <TouchableOpacity onPress={() => this.enviar()} style={styles.boton}>
           <Text style={styles.botonSalir}>Enviar</Text>
         </TouchableOpacity>
-
       </View>
     );
   }
@@ -177,62 +182,60 @@ class Form extends Component {
 
 const styles = StyleSheet.create({
   info: {
-    flex: .45,
+    flex: 0.45,
     justifyContent: "space-between",
     backgroundColor: "#fff",
     marginTop: 20,
     paddingLeft: 20,
     paddingRight: 20,
-
   },
   texto: {
     fontSize: 17,
-    alignSelf: 'center',
-    justifyContent: 'center',
+    alignSelf: "center",
+    justifyContent: "center",
   },
   cardform: {
-    backgroundColor: '#fff',
+    backgroundColor: "#fff",
     borderRadius: 10,
-    borderColor: '#F6B1B1',
+    borderColor: "#F6B1B1",
     borderBottomWidth: 2,
     borderTopWidth: 2,
     marginTop: 10,
     marginBottom: 10,
     padding: 10,
-    justifyContent: 'center',
-    alignContent: 'center',
+    justifyContent: "center",
+    alignContent: "center",
   },
   cardimg: {
     width: 370,
     height: 200,
-    alignSelf: 'center',
+    alignSelf: "center",
   },
   boton: {
     width: 150,
     height: 100,
     marginTop: 25,
     margin: 10,
-    alignSelf: 'center'
+    alignSelf: "center",
   },
   input: {
     height: 40,
     width: 50,
-    backgroundColor: '#FFF',
-    borderBottomColor: '#000000',
+    backgroundColor: "#FFF",
+    borderBottomColor: "#000000",
     borderBottomWidth: 1,
-    alignSelf: 'center',
-    alignContent: 'center',
+    alignSelf: "center",
+    alignContent: "center",
   },
   botonSalir: {
     fontSize: 25,
-    textAlign: 'center',
-    color: '#fff',
-    backgroundColor: '#FF4646',
+    textAlign: "center",
+    color: "#fff",
+    backgroundColor: "#FF4646",
     borderRadius: 15,
     padding: 3,
     margin: 5,
-},
+  },
 });
 
 export default Form;
-
