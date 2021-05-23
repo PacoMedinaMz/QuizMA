@@ -3,10 +3,10 @@ import { View, StyleSheet, ScrollView, Text, Image, Divider, TouchableOpacity } 
 
 
 import { Avatar, Button, Card, Title, Paragraph } from 'react-native-paper';
-import info1 from './info1';
-import info2 from './info2';
-import info3 from './info3';
-import info4 from './info4';
+import Info1 from './info/Info1';
+import Info2 from './info/Info2';
+import Info3 from './info/Info3';
+import Info4 from './info/Info4';
 
 
 export default function Informacion({ navigation, navigation: { goBack } }) {
@@ -22,7 +22,7 @@ export default function Informacion({ navigation, navigation: { goBack } }) {
                     <Card.Cover style={styles.cardimg} source={require('./assets/infobasics2.jpg')} />
                     <Card.Actions style={styles.cardbtn}>
                         <TouchableOpacity
-                            onPress={() => { navigation.navigate(info1) }}
+                            onPress={() => { navigation.navigate(Info1) }}
                             style={styles.respuestabtn}>
                             <Text style={styles.botonOk}>Consultar</Text>
                         </TouchableOpacity>
@@ -37,7 +37,7 @@ export default function Informacion({ navigation, navigation: { goBack } }) {
                     <Card.Cover style={styles.cardimg} source={require('./assets/anatomfem.jpg')} />
                     <Card.Actions style={styles.cardbtn}>
                         <TouchableOpacity
-                            onPress={() => { navigation.navigate(info2) }} //Cambiar este para redirigir
+                            onPress={() => { navigation.navigate(Info2) }} //Cambiar este para redirigir
                             style={styles.respuestabtn}>
                             <Text style={styles.botonOk}>Consultar</Text>
                         </TouchableOpacity>
@@ -52,7 +52,7 @@ export default function Informacion({ navigation, navigation: { goBack } }) {
                     <Card.Cover style={styles.cardimg} source={require('./assets/inv2.jpg')} />
                     <Card.Actions style={styles.cardbtn}>
                         <TouchableOpacity
-                            onPress={() => { navigation.navigate(info3) }}
+                            onPress={() => { navigation.navigate(Info3) }}
                             style={styles.respuestabtn}>
                             <Text style={styles.botonOk}>Consultar</Text>
                         </TouchableOpacity>

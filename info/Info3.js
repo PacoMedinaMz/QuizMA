@@ -5,7 +5,7 @@ import { Avatar, Button, Card, Title, Paragraph } from 'react-native-paper';
 import { Collapse, CollapseHeader, CollapseBody, AccordionList } from 'accordion-collapse-react-native';
 
 
-export default function info3({ navigation: { goBack } }) {
+export default function Info3({ navigation: { goBack } }) {
     return (
         <ScrollView style={styles.scrollView}>
             <View style={styles.info}>

@@ -4,7 +4,7 @@ import { Divider } from 'react-native-elements';
 import { Avatar, Button, Card, Title, Paragraph } from 'react-native-paper';
 
 
-export default function instruccion({navigation: { goBack } }) {
+export default function Instruccion({navigation: { goBack } }) {
 
     return (
         <ScrollView style={styles.scrollView}>

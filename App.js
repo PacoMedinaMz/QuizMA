@@ -10,15 +10,15 @@ import { createStackNavigator } from '@react-navigation/stack';
 //IMPORTS DE PAGINAS
 import Home from './home';
 import menu from './menu';
-import instruccion from './instruccion';
+import Instruccion from './Instruccion';
 import Informacion from './Informacion';
-
-import info1 from './info1';
-import info2 from './info2';
-import info3 from './info3';
-import info4 from './info4';
 import Ayuda from './Ayuda';
 import Formulario from './Formulario';
+
+import Info1 from './info/Info1';
+import Info2 from './info/Info2';
+import Info3 from './info/Info3';
+import Info4 from './info/Info4';
 
 import P1 from './preg/P1';
 import P2 from './preg/P2';
@@ -74,13 +74,13 @@ const App = ({ navigation }) => {
           <Stack.Navigator initialRouteName="menu">
             <Stack.Screen name="Menu" component={menu}></Stack.Screen>
             <Stack.Screen name="Home" component={Home}></Stack.Screen>
-            <Stack.Screen name="instruccion" component={instruccion}></Stack.Screen>
+            <Stack.Screen name="Instruccion" component={Instruccion}></Stack.Screen>
             <Stack.Screen name="Informacion" component={Informacion}></Stack.Screen>
             <Stack.Screen name="P1" component={P1}></Stack.Screen>
-            <Stack.Screen name="info1" component={info1}></Stack.Screen>
-            <Stack.Screen name="info2" component={info2}></Stack.Screen>
-            <Stack.Screen name="info3" component={info3}></Stack.Screen>
-            <Stack.Screen name="info4" component={info4}></Stack.Screen>
+            <Stack.Screen name="Info1" component={Info1}></Stack.Screen>
+            <Stack.Screen name="Info2" component={Info2}></Stack.Screen>
+            <Stack.Screen name="Info3" component={Info3}></Stack.Screen>
+            <Stack.Screen name="Info4" component={Info4}></Stack.Screen>
             <Stack.Screen name="Ayuda" component={Ayuda}></Stack.Screen>
             <Stack.Screen name="Formulario" component={Formulario}></Stack.Screen>
 

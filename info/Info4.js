@@ -4,7 +4,7 @@ import { Divider } from 'react-native-elements';
 import { Avatar, Button, Card, Title, Paragraph } from 'react-native-paper';
 
 
-export default function info4({navigation: { goBack } }) {
+export default function Info4({navigation: { goBack } }) {
 
     return (
         <ScrollView style={styles.scrollView}>
@@ -16,7 +16,7 @@ export default function info4({navigation: { goBack } }) {
                     <Divider style={{ backgroundColor: 'black' }} />
                     <Text style={styles.texto}>{'\n'}En desarrollo :){'\n'}</Text>
 
-                    <Card.Cover style={styles.cardimg} source={require('./assets/mantenimiento.png')} />
+                    <Card.Cover style={styles.cardimg} source={require('../assets/mantenimiento.png')} />
 
 
 

@@ -4,7 +4,7 @@ import { Divider } from 'react-native-elements';
 import { Avatar, Button, Card, Title, Paragraph } from 'react-native-paper';
 import { Collapse, CollapseHeader, CollapseBody, AccordionList } from 'accordion-collapse-react-native';
 
-export default function info2({ navigation: { goBack } }) {
+export default function Info2({ navigation: { goBack } }) {
 
     return (
         <ScrollView style={styles.scrollView}>
@@ -18,7 +18,7 @@ export default function info2({ navigation: { goBack } }) {
                 <Collapse>
                     <CollapseHeader>
                         <View>
-                            <Card.Cover style={styles.imgAcordeon} source={require('./assets/ac1.png')} />
+                            <Card.Cover style={styles.imgAcordeon} source={require('../assets/ac1.png')} />
                         </View>
                     </CollapseHeader>
                     <CollapseBody style={styles.body}>
@@ -45,7 +45,7 @@ export default function info2({ navigation: { goBack } }) {
                 <Collapse>
                     <CollapseHeader>
                         <View>
-                            <Card.Cover style={styles.imgAcordeon} source={require('./assets/ac2.png')} />
+                            <Card.Cover style={styles.imgAcordeon} source={require('../assets/ac2.png')} />
                         </View>
                     </CollapseHeader>
                     <CollapseBody style={styles.body}>
@@ -75,7 +75,7 @@ export default function info2({ navigation: { goBack } }) {
                 <Collapse>
                     <CollapseHeader>
                         <View>
-                            <Card.Cover style={styles.imgAcordeon} source={require('./assets/ac3.png')} />
+                            <Card.Cover style={styles.imgAcordeon} source={require('../assets/ac3.png')} />
                         </View>
                     </CollapseHeader>
                     <CollapseBody style={styles.body}>
@@ -104,7 +104,7 @@ export default function info2({ navigation: { goBack } }) {
                 <Collapse>
                     <CollapseHeader>
                         <View>
-                            <Card.Cover style={styles.imgAcordeon} source={require('./assets/ac4.png')} />
+                            <Card.Cover style={styles.imgAcordeon} source={require('../assets/ac4.png')} />
                         </View>
                     </CollapseHeader>
                     <CollapseBody style={styles.body}>
@@ -133,7 +133,7 @@ export default function info2({ navigation: { goBack } }) {
                 <Collapse>
                     <CollapseHeader>
                         <View>
-                            <Card.Cover style={styles.imgAcordeon} source={require('./assets/ac5.png')} />
+                            <Card.Cover style={styles.imgAcordeon} source={require('../assets/ac5.png')} />
                         </View>
                     </CollapseHeader>
                     <CollapseBody style={styles.body}>
@@ -161,7 +161,7 @@ export default function info2({ navigation: { goBack } }) {
                 <Collapse>
                     <CollapseHeader>
                         <View>
-                            <Card.Cover style={styles.imgAcordeon} source={require('./assets/ac6.png')} />
+                            <Card.Cover style={styles.imgAcordeon} source={require('../assets/ac6.png')} />
                         </View>
                     </CollapseHeader>
                     <CollapseBody style={styles.body}>
@@ -187,7 +187,7 @@ export default function info2({ navigation: { goBack } }) {
                 <Collapse>
                     <CollapseHeader>
                         <View>
-                            <Card.Cover style={styles.imgAcordeon} source={require('./assets/ac7.png')} />
+                            <Card.Cover style={styles.imgAcordeon} source={require('../assets/ac7.png')} />
                         </View>
                     </CollapseHeader>
                     <CollapseBody style={styles.body}>
@@ -213,7 +213,7 @@ export default function info2({ navigation: { goBack } }) {
                 <Collapse>
                     <CollapseHeader>
                         <View>
-                            <Card.Cover style={styles.imgAcordeon} source={require('./assets/ac8.png')} />
+                            <Card.Cover style={styles.imgAcordeon} source={require('../assets/ac8.png')} />
                         </View>
                     </CollapseHeader>
                     <CollapseBody style={styles.body}>
@@ -238,7 +238,7 @@ export default function info2({ navigation: { goBack } }) {
                 <Collapse>
                     <CollapseHeader>
                         <View>
-                            <Card.Cover style={styles.imgAcordeon} source={require('./assets/ac13.png')} />
+                            <Card.Cover style={styles.imgAcordeon} source={require('../assets/ac13.png')} />
                         </View>
                     </CollapseHeader>
                     <CollapseBody style={styles.body}>
@@ -262,7 +262,7 @@ export default function info2({ navigation: { goBack } }) {
                 <Collapse>
                     <CollapseHeader>
                         <View>
-                            <Card.Cover style={styles.imgAcordeon} source={require('./assets/ac12.png')} />
+                            <Card.Cover style={styles.imgAcordeon} source={require('../assets/ac12.png')} />
                         </View>
                     </CollapseHeader>
                     <CollapseBody style={styles.body}>
@@ -287,7 +287,7 @@ export default function info2({ navigation: { goBack } }) {
                   <Collapse>
                     <CollapseHeader>
                         <View>
-                            <Card.Cover style={styles.imgAcordeon} source={require('./assets/ac11.png')} />
+                            <Card.Cover style={styles.imgAcordeon} source={require('../assets/ac11.png')} />
                         </View>
                     </CollapseHeader>
                     <CollapseBody style={styles.body}>
@@ -312,7 +312,7 @@ export default function info2({ navigation: { goBack } }) {
                 <Collapse>
                     <CollapseHeader>
                         <View>
-                            <Card.Cover style={styles.imgAcordeon} source={require('./assets/ac9.png')} />
+                            <Card.Cover style={styles.imgAcordeon} source={require('../assets/ac9.png')} />
                         </View>
                     </CollapseHeader>
                     <CollapseBody style={styles.body}>
@@ -339,7 +339,7 @@ export default function info2({ navigation: { goBack } }) {
                 <Collapse>
                     <CollapseHeader>
                         <View>
-                            <Card.Cover style={styles.imgAcordeon} source={require('./assets/ac10.png')} />
+                            <Card.Cover style={styles.imgAcordeon} source={require('../assets/ac10.png')} />
                         </View>
                     </CollapseHeader>
                     <CollapseBody style={styles.body}>
