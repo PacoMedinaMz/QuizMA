@@ -69,6 +69,7 @@ class Form extends Component {
 
   enviar() {
     console.log("Enviando");
+    alert("Enviando");
     if (
       this.state.cal &&
       this.state.con &&
@@ -103,10 +104,15 @@ class Form extends Component {
         .then((res) => {
           console.log(res);
           console.log(res.data);
+          alert("Se enviaron con éxito ")
         })
-        .catch((error) => console.log(error));
+        .catch((error) => {
+          console.log(error)
+          alert("Error");
+        });
     } else {
       console.log("Incompleto");
+      alert("Llena todos los campos");
     }
   }
 
