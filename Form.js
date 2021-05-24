@@ -93,7 +93,7 @@ class Form extends Component {
 
       axios
         .post(
-          "http://35.239.233.69:3000/datos",
+          "https://apiqm.rmaafs.com/datos",
           { datos },
           {
             "content-type": "application/json",
@@ -127,7 +127,9 @@ class Form extends Component {
         </Card>
 
         <Card style={styles.cardform}>
-          <Text style={styles.texto}>¿Qué te pareció la dinámica del cuestionario? </Text>
+          <Text style={styles.texto}>
+            ¿Qué te pareció la dinámica del cuestionario?{" "}
+          </Text>
           <TextInput
             style={styles.input}
             placeholder="  (1 - 5)"
