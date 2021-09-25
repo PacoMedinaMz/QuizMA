@@ -11,7 +11,7 @@ import Pregunta10 from "./preguntas/Pregunta10";
 const Formulario2 = () => {
   const navigation = useNavigation();
 
-  const [genero, setGenero] = useState("na");
+  const [recomendado, setRecomendado] = useState("condon");
   const [edad, setEdad] = useState("1");
   const [orientacion, setOrientacion] = useState("0");
   const [metodos, setMetodos] = useState([]);
@@ -34,7 +34,7 @@ const Formulario2 = () => {
         width: "100%",
       }}
     >
-      <Pregunta6 value={genero} setValue={setGenero} />
+      <Pregunta6 value={recomendado} setValue={setRecomendado} />
       <Pregunta7 value={edad} setValue={setEdad} />
       <Pregunta8 value={orientacion} setValue={setOrientacion} />
       <Pregunta9 value={metodos} setValue={setMetodos} />
