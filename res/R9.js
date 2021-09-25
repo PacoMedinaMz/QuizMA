@@ -40,6 +40,14 @@ export default function R9({ navigation, navigation: { goBack } }) {
           >
             <Text style={styles.botonSalir}>Salir</Text>
           </TouchableOpacity>
+          <TouchableOpacity
+            onPress={() => {
+              navigation.navigate("Encuesta2");
+            }}
+            style={styles.boton}
+          >
+            <Text style={styles.botonSalir}>Ayúdanos</Text>
+          </TouchableOpacity>
         </Card>
       </View>
     </ScrollView>
