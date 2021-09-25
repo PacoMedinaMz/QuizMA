@@ -14,7 +14,7 @@ const Formulario2 = () => {
   const [recomendado, setRecomendado] = useState("condon");
   const [puntaucion, setPuntuacion] = useState("0");
   const [aplicacion, setAplicacion] = useState("0");
-  const [metodos, setMetodos] = useState([]);
+  const [dinamica, setDinamica] = useState("0");
   const [conocimientos, setConocimientos] = useState("0");
 
   const enviar = () => {
@@ -37,7 +37,7 @@ const Formulario2 = () => {
       <Pregunta6 value={recomendado} setValue={setRecomendado} />
       <Pregunta7 value={puntaucion} setValue={setPuntuacion} />
       <Pregunta8 value={aplicacion} setValue={setAplicacion} />
-      <Pregunta9 value={metodos} setValue={setMetodos} />
+      <Pregunta9 value={dinamica} setValue={setDinamica} />
       <Pregunta10 value={conocimientos} setValue={setConocimientos} />
 
       <Card.Actions style={styles.cardbtn}>

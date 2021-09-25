@@ -1,60 +1,26 @@
 import React from "react";
 import Pregunta from "../../Pregunta";
-import MultiSelect from "react-native-multiple-select";
+import { Picker } from "@react-native-picker/picker";
 
 const Pregunta9 = ({ value, setValue }) => {
-  const items = [
-    {
-      id: "condon",
-      name: "Condón",
-    },
-    {
-      id: "diu",
-      name: "DIU",
-    },
-    {
-      id: "hormonal",
-      name: "Pastillas hormonales",
-    },
-    {
-      id: "parche",
-      name: "Parche",
-    },
-    {
-      id: "anillo",
-      name: "Anillo hormonal",
-    },
-    {
-      id: "emergencia",
-      name: "Pastilla de emergencia",
-    },
-    {
-      id: "otro",
-      name: "Otro",
-    },
-  ];
-
   return (
-    <Pregunta title="¿Cuál método anticonceptivo consideras mejor para ti (Marca todas las opciones que consideres)?">
-      <MultiSelect
-        hideTags
-        items={items}
-        uniqueKey="id"
-        onSelectedItemsChange={(selectedItems) => setValue(selectedItems)}
-        selectedItems={value}
-        selectText="Seleccione..."
-        searchInputPlaceholderText="Buscar"
-        tagRemoveIconColor="#CCC"
-        tagBorderColor="#CCC"
-        tagTextColor="#CCC"
-        selectedItemTextColor="#009616"
-        selectedItemIconColor="#009616"
-        itemTextColor="#000"
-        displayKey="name"
-        searchInputStyle={{ color: "#CCC" }}
-        submitButtonColor="#009616"
-        submitButtonText="Aceptar"
-      />
+    <Pregunta title="¿Como calificas la dinámica?">
+      <Picker
+        selectedValue={value}
+        onValueChange={(itemValue) => setValue(itemValue)}
+        style={{
+          width: "100%",
+          height: 40,
+        }}
+      >
+        <Picker.Item label="Nefasta" value="0" />
+        <Picker.Item label="Mala" value="1" />
+        <Picker.Item label="Aburrida" value="2" />
+        <Picker.Item label="Regular" value="3" />
+        <Picker.Item label="Básica" value="4" />
+        <Picker.Item label="Buena" value="5" />
+        <Picker.Item label="Excelente" value="6" />
+      </Picker>
     </Pregunta>
   );
 };
