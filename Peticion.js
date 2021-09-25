@@ -1,23 +1,14 @@
 import axios from "axios";
 
 const sendFormulario = (path, datos) => {
+  const url = "https://apiqm.rmaafs.com" + path;
   axios
-    .post(
-      "https://apiqm.rmaafs.com" + path,
-      { datos },
-      {
-        "content-type": "application/json",
-        Authorization: "xxx",
-      }
-    )
-    .then((res) => {
-      console.log(res);
-      console.log(res.data);
-      alert("Se enviaron con éxito ");
+    .post(url, datos)
+    .then(({ data }) => {
+      console.log(data);
     })
-    .catch((error) => {
-      console.log(error);
-      alert("Error");
+    .catch((err) => {
+      console.log(err);
     });
 };
 

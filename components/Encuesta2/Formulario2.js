@@ -7,6 +7,7 @@ import Pregunta7 from "./preguntas/Pregunta7";
 import Pregunta8 from "./preguntas/Pregunta8";
 import Pregunta9 from "./preguntas/Pregunta9";
 import Pregunta10 from "./preguntas/Pregunta10";
+import sendFormulario from "../../Peticion";
 
 const Formulario2 = () => {
   const navigation = useNavigation();
@@ -26,6 +27,8 @@ const Formulario2 = () => {
       calificacion: calificacion,
     };
     console.log(data);
+
+    sendFormulario("/encuestas/2", data);
   };
 
   return (

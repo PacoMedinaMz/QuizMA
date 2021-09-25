@@ -2,6 +2,7 @@ import { useNavigation } from "@react-navigation/core";
 import React, { useState } from "react";
 import { StyleSheet, Text, View, TouchableOpacity } from "react-native";
 import { Card } from "react-native-paper";
+import sendFormulario from "../../Peticion";
 import Pregunta1 from "./preguntas/Pregunta1";
 import Pregunta2 from "./preguntas/Pregunta2";
 import Pregunta3 from "./preguntas/Pregunta3";
@@ -26,6 +27,8 @@ const Formulario = () => {
       conocimientos: conocimientos,
     };
     console.log(data);
+
+    sendFormulario("/encuestas/1", data);
   };
 
   return (
