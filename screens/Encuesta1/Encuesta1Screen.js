@@ -2,6 +2,7 @@ import React from "react";
 import { View, StyleSheet, ScrollView, Text } from "react-native";
 import { Divider } from "react-native-elements";
 import { Card, Title } from "react-native-paper";
+import Formulario from "../../components/Encuesta1/Formulario";
 
 const Encuesta1Screen = () => {
   return (
@@ -14,6 +15,15 @@ const Encuesta1Screen = () => {
             <Text style={styles.texto}>
               {"\n"}Contesta las preguntas que se muestran a continuación.
             </Text>
+            <Divider
+              style={{
+                backgroundColor: "blue",
+                marginTop: 25,
+                marginBottom: 10,
+              }}
+            />
+
+            <Formulario />
           </Card.Content>
         </Card>
 
