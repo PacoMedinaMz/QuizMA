@@ -37,7 +37,7 @@ export default function Home({ navigation, navigation: { goBack } }) {
           <Card.Actions style={styles.cardbtn}>
             {/* Regresar btn */}
             <TouchableOpacity onPress={() => goBack()} style={styles.boton}>
-              <Text style={styles.botonSalir}>Regresar</Text>
+              <Text style={styles.botonOk}>Regresar</Text>
             </TouchableOpacity>
 
             {/* Continuar btn */}
@@ -48,6 +48,14 @@ export default function Home({ navigation, navigation: { goBack } }) {
               style={styles.boton}
             >
               <Text style={styles.botonOk}>Comenzar</Text>
+            </TouchableOpacity>
+
+            {/* Ayúdanos */}
+            <TouchableOpacity
+              onPress={() => navigation.navigate("Encuesta1")}
+              style={styles.boton}
+            >
+              <Text style={styles.botonOk}>Ayúdanos</Text>
             </TouchableOpacity>
           </Card.Actions>
         </Card>
@@ -111,7 +119,7 @@ const styles = StyleSheet.create({
     textAlign: "left",
   },
   boton: {
-    width: 150,
+    width: "33%",
     height: 100,
     justifyContent: "center",
     alignContent: "center",
@@ -126,12 +134,12 @@ const styles = StyleSheet.create({
     margin: 5,
   },
   botonOk: {
-    fontSize: 25,
+    fontSize: 20,
     textAlign: "center",
     color: "#fff",
     backgroundColor: "#FF4646",
     borderRadius: 15,
-    padding: 3,
+    padding: 4,
     margin: 5,
     marginLeft: 10,
   },
