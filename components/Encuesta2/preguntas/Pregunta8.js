@@ -4,7 +4,7 @@ import { Picker } from "@react-native-picker/picker";
 
 const Pregunta8 = ({ value, setValue }) => {
   return (
-    <Pregunta title="¿En qué grado has recibido educación sexual?">
+    <Pregunta title="¿En qué grado consideras que la aplicación contribuyó a tu educación sexual?">
       <Picker
         selectedValue={value}
         onValueChange={(itemValue) => setValue(itemValue)}

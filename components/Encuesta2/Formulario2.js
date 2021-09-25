@@ -12,8 +12,8 @@ const Formulario2 = () => {
   const navigation = useNavigation();
 
   const [recomendado, setRecomendado] = useState("condon");
-  const [edad, setEdad] = useState("1");
-  const [orientacion, setOrientacion] = useState("0");
+  const [puntaucion, setPuntuacion] = useState("0");
+  const [aplicacion, setAplicacion] = useState("0");
   const [metodos, setMetodos] = useState([]);
   const [conocimientos, setConocimientos] = useState("0");
 
@@ -35,8 +35,8 @@ const Formulario2 = () => {
       }}
     >
       <Pregunta6 value={recomendado} setValue={setRecomendado} />
-      <Pregunta7 value={edad} setValue={setEdad} />
-      <Pregunta8 value={orientacion} setValue={setOrientacion} />
+      <Pregunta7 value={puntaucion} setValue={setPuntuacion} />
+      <Pregunta8 value={aplicacion} setValue={setAplicacion} />
       <Pregunta9 value={metodos} setValue={setMetodos} />
       <Pregunta10 value={conocimientos} setValue={setConocimientos} />
 
