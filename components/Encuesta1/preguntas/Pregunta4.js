@@ -1,5 +1,5 @@
 import React from "react";
-import Pregunta from "../Pregunta";
+import Pregunta from "../../Pregunta";
 import MultiSelect from "react-native-multiple-select";
 
 const Pregunta4 = ({ value, setValue }) => {

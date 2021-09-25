@@ -1,5 +1,5 @@
 import React from "react";
-import Pregunta from "../Pregunta";
+import Pregunta from "../../Pregunta";
 import { Picker } from "@react-native-picker/picker";
 
 const Pregunta2 = ({ value, setValue }) => {
