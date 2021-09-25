@@ -10,7 +10,7 @@ const Encuesta2Screen = () => {
       <View style={styles.info}>
         <Card style={styles.card}>
           <Card.Content>
-            <Title style={styles.cardtitle}>¡Vamos a comenzar2!</Title>
+            <Title style={styles.cardtitle}>¡Vamos a comenzar!</Title>
             <Divider style={{ backgroundColor: "blue" }} />
             <Text style={styles.texto}>
               {"\n"}Contesta las preguntas que se muestran a continuación.
