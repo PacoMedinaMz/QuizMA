@@ -52,7 +52,7 @@ export default function Home({ navigation, navigation: { goBack } }) {
 
             {/* Ayúdanos */}
             <TouchableOpacity
-              onPress={() => navigation.navigate("Encuesta1")}
+              onPress={() => navigation.navigate("Encuesta2")}
               style={styles.boton}
             >
               <Text style={styles.botonOk}>Ayúdanos</Text>

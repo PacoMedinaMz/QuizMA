@@ -36,8 +36,8 @@ import R6 from "./res/R6";
 import R7 from "./res/R7";
 import R8 from "./res/R8";
 import R9 from "./res/R9";
-import Encuesta1 from "./screens/Encuesta1/Encuesta1Screen";
-import Encuesta1Screen from "./screens/Encuesta1/Encuesta1Screen";
+import Encuesta1Screen from "./screens/Encuestas/Encuesta1Screen";
+import Encuesta2Screen from "./screens/Encuestas/Encuesta2Screen";
 
 const Stack = createStackNavigator();
 
@@ -115,6 +115,11 @@ const App = ({ navigation }) => {
             <Stack.Screen
               name="Encuesta1"
               component={Encuesta1Screen}
+              options={{ title: "Ayúdanos" }}
+            ></Stack.Screen>
+            <Stack.Screen
+              name="Encuesta2"
+              component={Encuesta2Screen}
               options={{ title: "Ayúdanos" }}
             ></Stack.Screen>
           </Stack.Navigator>
