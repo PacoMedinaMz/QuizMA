@@ -13,13 +13,13 @@ const Pregunta9 = ({ value, setValue }) => {
           height: 40,
         }}
       >
-        <Picker.Item label="Nefasta" value="0" />
-        <Picker.Item label="Mala" value="1" />
-        <Picker.Item label="Aburrida" value="2" />
-        <Picker.Item label="Regular" value="3" />
-        <Picker.Item label="Básica" value="4" />
-        <Picker.Item label="Buena" value="5" />
-        <Picker.Item label="Excelente" value="6" />
+        <Picker.Item label="Nefasta" value="1" />
+        <Picker.Item label="Mala" value="2" />
+        <Picker.Item label="Aburrida" value="3" />
+        <Picker.Item label="Regular" value="4" />
+        <Picker.Item label="Básica" value="5" />
+        <Picker.Item label="Buena" value="6" />
+        <Picker.Item label="Excelente" value="7" />
       </Picker>
     </Pregunta>
   );
