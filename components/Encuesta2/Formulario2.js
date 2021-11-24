@@ -29,8 +29,10 @@ const Formulario2 = () => {
     console.log(data);
 
     sendFormulario("/encuestas/2", data);
-    alert("¡Gracias por tu colaboración!");
-    navigation.navigate("Menu");
+    //alert("¡Gracias por tu colaboración!");
+    //navigation.navigate("Menu");
+
+    navigation.navigate("Encuesta1");
   };
 
   return (

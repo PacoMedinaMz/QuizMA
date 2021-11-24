@@ -51,12 +51,12 @@ export default function Home({ navigation, navigation: { goBack } }) {
             </TouchableOpacity>
 
             {/* Ayúdanos */}
-            <TouchableOpacity
+            {/*<TouchableOpacity
               onPress={() => navigation.navigate("Encuesta1")}
               style={styles.boton}
             >
               <Text style={styles.botonOk}>Ayúdanos</Text>
-            </TouchableOpacity>
+            </TouchableOpacity>*/}
           </Card.Actions>
         </Card>
 
