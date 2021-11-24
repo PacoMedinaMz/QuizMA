@@ -39,6 +39,14 @@ import R9 from "./res/R9";
 import Encuesta1Screen from "./screens/Encuestas/Encuesta1Screen";
 import Encuesta2Screen from "./screens/Encuestas/Encuesta2Screen";
 
+import * as Sentry from "@sentry/react-native";
+Sentry.init({
+  dsn: "https://29f55075ac3a468cb916e04b887f745b@o1076563.ingest.sentry.io/6078523",
+  // Set tracesSampleRate to 1.0 to capture 100% of transactions for performance monitoring.
+  // We recommend adjusting this value in production.
+  tracesSampleRate: 1.0,
+});
+
 const Stack = createStackNavigator();
 
 const App = ({ navigation }) => {
